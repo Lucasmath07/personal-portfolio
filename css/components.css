@@ -448,6 +448,9 @@ nav li:hover {
   justify-content: center;
   width: 50%;
 }
+.mobile-about-text{
+  display: none;
+}
 .fotos {
   display: flex;
   justify-content: center;
@@ -927,11 +930,9 @@ nav li:hover {
   .bar {
     display: none;
   }
-  .swiper-slide img {
-    height: 65%;
-  }
   .mobile-about-text {
     visibility: visible;
+    display: flex;
   }
   .fotos-container {
     align-items: center;

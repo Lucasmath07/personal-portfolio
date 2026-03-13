@@ -1,5 +1,5 @@
 .swiper {
-  width: 320px;
+  width: 340px;
   height: 480px;
 }
 
@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
@@ -27,29 +27,43 @@
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   pointer-events: none;
   border-radius: 18px;
+  padding: 0;
 }
 .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: center;
-  border-radius: 30px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 .mobile-about-text {
+  position: relative;
+  z-index: 2;
   background-color: var(--gelo);
   height: 100%;
   font-size: var(--normal-sz);
   color: var(--preto);
-  visibility: hidden;
+  display: none;
+  padding: 15px;
 }
 .mobile-about-text p {
   margin: 10px;
 }
+.dark-mode .mobile-about-text {
+  background-color: rgba(26, 31, 36, 0.9);
+}
 @media (max-width: 980px) {
-  .swiper{
-    height: 520px;
-  }
   .mobile-about-text {
-    visibility: visible;
+    display: block; 
+    max-height: 50%;   
+    overflow-y: auto; 
   }
 }
