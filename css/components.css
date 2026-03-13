@@ -861,7 +861,7 @@ nav li:hover {
     overflow: hidden;
   }
   .tech {
-    width: 70%;
+    width: 90%;
     scroll-snap-align: center; /*quando parar de rolar, o card centraliza*/
     flex: 0 0 auto;
     height: auto;
