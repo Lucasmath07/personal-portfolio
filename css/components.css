@@ -1,52 +1,3 @@
-.animacao-inicial {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  box-shadow:
-    inset 50vw 0 0 0 var(--branco),
-    inset -50vw 0 0 0 var(--branco);
-  display: grid;
-  place-items: center;
-  z-index: 100000;
-}
-.animacao-inicial.carregada {
-  transition: 0.5s ease 0.5s;
-  pointer-events: none;
-  box-shadow:
-    inset 0 0 0 0 var(--branco),
-    inset 0 0 0 0 var(--branco);
-}
-.animacao-inicial .linha {
-  width: 2px;
-  height: 100%;
-  background-color: var(--preto-azul);
-  transition: 0.5s ease;
-  animation: carregando 1s linear forwards;
-}
-
-@keyframes carregando {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(0.3);
-  }
-}
-.animacao-inicial.carregada .linha {
-  animation: carregada 1s ease forwards;
-}
-@keyframes carregada {
-  0% {
-    transform: scaleY(0.3);
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 0;
-  }
-}
-
 /*header*/
 .header-container {
   display: flex;
@@ -910,7 +861,7 @@ nav li:hover {
     overflow: hidden;
   }
   .tech {
-    width: 50%;
+    width: 70%;
     scroll-snap-align: center; /*quando parar de rolar, o card centraliza*/
     flex: 0 0 auto;
     height: auto;
