@@ -244,7 +244,12 @@ nav li:hover {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.hero-botoes button{
+  margin: 0 2rem;
 }
 .hero-botao {
   font-size: 1.1rem;
@@ -468,6 +473,7 @@ nav li:hover {
   color: black;
   text-align: justify;
 }
+
 .tech:hover {
   box-shadow:
     0 0 10px var(--box-shadow-color),
@@ -861,7 +867,7 @@ nav li:hover {
     overflow: hidden;
   }
   .tech {
-    width: 90%;
+    width: 85%;
     scroll-snap-align: center; /*quando parar de rolar, o card centraliza*/
     flex: 0 0 auto;
     height: auto;
@@ -873,6 +879,9 @@ nav li:hover {
     justify-content: center;
     margin: 0;
     padding: 0;
+  }
+  .tech-sub{
+    text-align: center;
   }
   .about-title {
     margin: 0;
@@ -966,6 +975,7 @@ nav li:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 3rem 0;
   }
   .contact-content-container {
     width: 90%;
