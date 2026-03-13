@@ -825,10 +825,12 @@ nav li:hover {
   nav {
     width: 100%;
     margin: 0;
+    box-shadow: none;
   }
   .header-container {
-    width: 100%;
+    width: 100% !important;
     margin-top: 0;
+    border-radius: 0;
   }
   .li-navbar {
     display: none;
@@ -868,6 +870,8 @@ nav li:hover {
   }
   .hero-descricao {
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
   }
   .foto img {
     height: 300px;
