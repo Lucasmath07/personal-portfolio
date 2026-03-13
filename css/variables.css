@@ -1,0 +1,75 @@
+:root{
+
+
+  /*cores*/
+  --branco: hsla(0, 0%, 100%, 1);
+  --branco_a8: hsla(0, 0%, 100%, 0.08);
+  --branco_a12: hsla(0, 0%, 100%, 0.12);
+  --gelo: hsla(220, 20%, 97%, 1);
+  --neve: hsla(345, 57%, 97%, 1);
+  --cinza-azul-leve: hsla(219, 10%, 62%, 1);
+  --cinza-escuro: hsla(220, 12%, 43%, 1);
+  --cinza-azul: hsla(222, 23%, 71%, 0.2);
+  --azul-claro: hsla(220, 53%, 62%, 1);
+  --preto-azul: hsla(216, 14%, 14%, 1);
+  --preto:hsla(0, 0%, 0%, 1);
+  --preto-leve:hsla(0,0%,10%, 1);
+  --preto-azul_a6: hsla(216, 14%, 14%, 0.06);
+  --azul-escuro-1: hsla(214, 15%, 21%, 1);
+  --azul-escuro: hsla(219, 22%, 26%, 1);
+  --box-shadow-color: hsla(246, 72%, 18%,1);
+  --box-shadow-header:hsla(0, 0%, 0%, 0.1);
+
+
+  /*box shadow botao*/
+  --box-shadow-button-1:hsla(0, 0%, 0%, 0.04);
+  --box-shadow-button-2:hsla(0, 0%, 0%, 0.08);
+
+
+  /*fonts*/
+  --titles-sz: 3rem;
+  --subtitles-sz: 1.5rem;
+  --normal-sz:1rem;
+  --titles-mobile-sz: 2.5rem;
+  --subtitles-mobile-sz:1.2rem;
+  --nav-font-sz: 1.1rem;
+  --titles-w:600;
+  --subtitles-w:500;
+
+}
+
+
+.dark-mode {
+  --branco: hsla(216, 14%, 15%, 1);        /* Era branco puro -> Agora é o fundo dos cards/header */
+  --gelo: hsla(216, 14%, 10%, 1);          /* Era o fundo da página -> Agora é o fundo principal (quase preto) */
+  --neve: hsla(216, 14%, 12%, 1);          /* Era um fundo levemente rosado -> Agora é um cinza bem escuro */
+  
+  /* --- TRANSPARÊNCIAS SOBRE FUNDOS --- */
+  --branco_a8: hsla(0, 0%, 100%, 0.03);    /* Brilho bem sutil para overlays */
+  --branco_a12: hsla(0, 0%, 100%, 0.06);   /* Brilho um pouco maior para overlays */
+  --cinza-azul: hsla(216, 14%, 20%, 0.8);  /* Era fundo do Contact Me -> Fica um pouco mais destacado que o fundo da página */
+  
+  /* --- TEXTOS E TÍTULOS (O que era escuro vira claro) --- */
+  --preto: hsla(220, 20%, 90%, 1);         /* Era preto puro -> Texto principal (branco gelo para não cansar a vista) */
+  --preto-leve: hsla(220, 20%, 85%, 1);    /* Textos secundários um pouco mais suaves */
+  --preto-azul: hsla(220, 20%, 98%, 1);    /* Era texto bem escuro -> Agora são os títulos (branco quase puro) */
+  --preto-azul_a6: hsla(0, 0%, 100%, 0.1); /* Era sombra/overlay escuro -> Agora é um overlay claro sutil */
+
+  /* --- CORES DE ACENTO E DETALHES --- */
+  --cinza-azul-leve: hsla(219, 15%, 75%, 1); /* Aumentamos a luminosidade para ter contraste no fundo escuro */
+  --cinza-escuro: hsla(220, 15%, 70%, 1);    /* Idem ao de cima */
+  
+  /* Mantemos as cores vivas, mas ajustamos um pouco o brilho para ficarem bonitas no escuro */
+  --azul-claro: hsla(220, 70%, 65%, 1); 
+  --azul-escuro-1: hsla(214, 40%, 75%, 1);   /* Era escuro -> Fica um azul pastel/claro */
+  --azul-escuro: hsla(219, 40%, 70%, 1);     /* Era escuro -> Fica um azul pastel/claro */
+
+  /* --- SOMBRAS (Shadows no escuro agem de forma diferente) --- */
+  /* No modo claro as sombras eram pretas/escuras. No dark mode elas precisam ser mais densas para aparecerem. */
+  --box-shadow-color: hsla(0, 0%, 80%, 0.15); /* A sombra principal ganha um "Glow" (brilho sutil azulado) para o hover dos botões */
+  --box-shadow-header: hsla(0, 0%, 0%, 0.6);     /* Sombra forte para descolar o header do fundo escuro */
+  
+  /* Sombras dos botões */
+  --box-shadow-button-1: hsla(0, 0%, 0%, 0.4);
+  --box-shadow-button-2: hsla(0, 0%, 0%, 0.6);
+}

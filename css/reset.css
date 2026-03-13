@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a,
+img,
+span{
+  display: block;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+img{
+  height: auto;
+}
+
+input,
+button,
+textarea{
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+textarea{
+  width: 100%;
+}
+
+button{
+  cursor: pointer;
+}
+html{
+  font-family: Manrope;
+}
+body{
+  background-color: var(--gelo);
+  width: 100%;
+  overflow-x: hidden;
+  color: var(--preto);
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
